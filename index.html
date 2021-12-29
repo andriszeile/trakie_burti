@@ -8,8 +8,8 @@
     <title>Trakie burti</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="header">
+    <div>
+        <div class="head">
             <h1>
                 <a href="index.html">
                     Trakie burti
@@ -41,13 +41,23 @@
 
         </div><!--beidzas header-->
 
-        <div class="content">
+        <div class="container">
             <h3>Noteikumi</h3>
-            <p>No sajaktajiem burtiem būs jāizveido vāds.</p>
-            <h3>
-                Ievadi savu vārdu:
-            </h3>
+            <p>No sajaktajiem burtiem būs jāizveido vāds. Par katru pareizu mēģinājumi +1 punkts, par katru nepareizu -1 punkts.</p>
+            Vārds: <input id="vards" />
+            <br />
+            Vecums: <input id="vecums" />
+            <br />
+            Reģions:<select id="regions">
+                <option value="Vidzeme">Vidzeme</option>
+                <option value="Latgale">Latgale</option>
+                <option value="Kurzeme">Kurzeme</option>
+                <option value="Zemgale">Zemgale</option>
+            </select>
+
+            <button onclick="sakt_speli()">Sākt</button>
         </div><!--beidzas content-->
     </div> <!--wrapper beigas-->
+<script type="text/javascript" src="script.js"></script>
 </body>
 </html>
