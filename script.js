@@ -51,7 +51,7 @@ const scrambleword = (arr) =>{
 	}
 	return arr;
 }
-score.innerHTML = `Score : ${s}`;
+score.innerHTML = `Punkti: ${s}`;
 btn.addEventListener("click",function(){
 score.style.display = "block";
 	if (!play) {
