@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trakie burti</title>
+</head>
+<body>
+    <div>
+        <div class="head">
+            <h1>
+                <a href="index.html">
+                    Trakie burti
+                </a>
+            </h1>
+
+            <ul>
+                <!--<li>
+                    <a href="spele.html">
+                        Spēle
+                    </a>
+                </li>-->
+                <li>
+                    <a href="limenis.html">
+                        Burtu skaits
+                    </a>
+                </li>                
+                <li>
+                    <a href="top.html">
+                        Tops
+                    </a>
+                </li>                
+                <li>
+                    <a href="par.html">
+                        Par autoru
+                    </a>
+                </li>
+            </ul>
+
+        </div><!--beidzas header-->
+
+        <div class="container">
+            <h3 class="main">Noteikumi</h3>
+            <p class="teksts">No sajaktajiem burtiem būs jāizveido vāds. Par katru pareizu mēģinājumi +1 punkts, par katru nepareizu -1 punkts.</p>
+            Vārds: <input id="vards" />
+            <br />
+            Vecums: <input id="vecums" />
+            <br />
+            Reģions:<select id="regions">
+                <option value="Vidzeme">Vidzeme</option>
+                <option value="Latgale">Latgale</option>
+                <option value="Kurzeme">Kurzeme</option>
+                <option value="Zemgale">Zemgale</option>
+            </select>
+
+            <button onclick="sakt_speli()">Sākt</button>
+        </div><!--beidzas content-->
+    </div> <!--wrapper beigas-->
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
