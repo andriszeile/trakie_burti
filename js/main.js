@@ -4,7 +4,7 @@ var words = [
 	["zvaigzne", "sienāzis", "viela", "sports", "valsts", "lauva", "laipa"]
 ];
 
-const totalTime = 100; //Total time (seconds)
+const totalTime = 120; //Total time (seconds)
 const minLevel = 1;
 const maxLevel = words.length;
 
@@ -286,8 +286,11 @@ function gameStart() {
 	}
 	
 	time = totalTime;
-	getElement('time-placeholder').textContent = time;
+	//getElement('time-placeholder').textContent = time; - liekas ne tur bija
 	points = 0;
+	//2 lines - getelement pārnešana
+	getElement('time-placeholder').textContent = time;
+	getElement('points-placeholder').textContent = points;
 	createWord();
 	if (intervalId) {
 		clearInterval(intervalId);
